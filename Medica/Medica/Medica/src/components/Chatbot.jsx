@@ -35,7 +35,7 @@ const Chatbot = () => {
     const generateResponse = async (msg) => {
         if (!msg) return;
 
-        const genAI = new GoogleGenerativeAI("AIzaSyCDxh2tZSR58MnxZB_5LwIomFDrOLJx69s");
+        const genAI = new GoogleGenerativeAI("");//apikey
         const model = genAI.getGenerativeModel({
             model: "gemini-2.0-flash",
             systemInstruction: `You are a virtual medical assistant trained in symptom analysis and preliminary health guidance. Your role is to help users understand potential causes of their symptoms based on verified medical knowledge.
